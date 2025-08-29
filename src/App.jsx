@@ -44,11 +44,13 @@ function App() {
         />
       )}
 
-      {/* Sidebar - Hidden on mobile when closed */}
-      <div className={`${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 transition-transform duration-300 ease-in-out fixed md:relative z-30`}>
+      {/* Sidebar - Mobile and Desktop */}
+      <div className={`${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 transition-transform duration-300 ease-in-out fixed md:relative z-50 md:z-auto`}>
         <Sidebar
           activeSection={activeSection}
           onSelectSection={handleSelectSection}
+          isMobileMenuOpen={isMobileMenuOpen}
+          setIsMobileMenuOpen={setIsMobileMenuOpen}
         />
       </div>
 
