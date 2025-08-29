@@ -24,6 +24,14 @@ function App() {
     setIsMobileMenuOpen(false);
   };
 
+  // Set default section to coaching if no section is specified
+  useEffect(() => {
+    if (!section && !activeSection) {
+      // Redirect to coaching section by default
+      navigate("/section/coaching", { replace: true });
+    }
+  }, [section, activeSection, navigate]);
+
   return (
     <div className="layout">
       {/* Mobile Menu Button */}
@@ -71,14 +79,14 @@ function App() {
         {!section && (
           <Breadcrumbs
             items={[
-              { label: "About Me", value: null },
+              { label: "Online Coaching", value: null },
               ...(activeSection
                 ? [{ label: activeSection, value: activeSection }]
                 : []),
             ]}
             onNavigate={(value) => {
               if (value === null) {
-                handleSelectSection(null);
+                handleSelectSection("coaching");
               }
             }}
           />
@@ -94,7 +102,7 @@ function App() {
         </div>
 
         {/* Content based on section */}
-        {section === "coaching" ? (
+        {section === "coaching" || (!section && !activeSection) ? (
           <OnlineCoachingSection />
         ) : (
           <AboutMeSection />
