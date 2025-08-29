@@ -12,11 +12,11 @@ function App() {
 
   // Get route parameters
   const { section } = params;
-  const activeSection = section ? decodeURIComponent(section) : null;
+  const activeSection = section ? decodeURIComponent(section) : "coaching";
 
   const handleSelectSection = (section) => {
-    if (section) {
-      navigate(`/section/${encodeURIComponent(section)}`);
+    if (section === "coaching") {
+      navigate("/section/coaching");
     } else {
       navigate("/");
     }
@@ -26,11 +26,11 @@ function App() {
 
   // Set default section to coaching if no section is specified
   useEffect(() => {
-    if (!section && !activeSection) {
+    if (!section) {
       // Redirect to coaching section by default
       navigate("/section/coaching", { replace: true });
     }
-  }, [section, activeSection, navigate]);
+  }, [section, navigate]);
 
   return (
     <div className="layout">
@@ -76,33 +76,33 @@ function App() {
 
       <main className="main-content md:ml-64 pt-16 md:pt-0">
         {/* Breadcrumbs for main page */}
-        {!section && (
-          <Breadcrumbs
-            items={[
-              { label: "Online Coaching", value: null },
-              ...(activeSection
-                ? [{ label: activeSection, value: activeSection }]
-                : []),
-            ]}
-            onNavigate={(value) => {
-              if (value === null) {
-                handleSelectSection("coaching");
-              }
-            }}
-          />
-        )}
+        <Breadcrumbs
+          items={[
+            { label: "Online Coaching", value: "coaching" },
+            ...(activeSection !== "coaching"
+              ? [{ label: activeSection, value: activeSection }]
+              : []),
+          ]}
+          onNavigate={(value) => {
+            if (value === "coaching") {
+              handleSelectSection("coaching");
+            } else {
+              handleSelectSection(null);
+            }
+          }}
+        />
 
         <div className="page-header">
-          <h1>{activeSection ? `${activeSection}` : "Get to 5.0+ in 1 year"}</h1>
+          <h1>{activeSection === "coaching" ? "Online Coaching" : "About Me"}</h1>
           <p className="text-gray-900">
-            {activeSection
-              ? `Transform your pickleball game with proven coaching methods`
-              : "Transform your pickleball game with proven coaching methods"}
+            {activeSection === "coaching"
+              ? "Transform your pickleball game with proven coaching methods"
+              : "Learn more about your pickleball coach and my journey"}
           </p>
         </div>
 
         {/* Content based on section */}
-        {section === "coaching" || (!section && !activeSection) ? (
+        {activeSection === "coaching" ? (
           <OnlineCoachingSection />
         ) : (
           <AboutMeSection />
