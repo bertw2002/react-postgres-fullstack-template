@@ -39,17 +39,35 @@ function Sidebar({ activeSection, onSelectSection, isMobileMenuOpen, setIsMobile
           Online Coaching
         </button>
 
-        <div className="sidebar-nav p-4">
+        <div className="sidebar-section mt-6">
+          <div className="sidebar-heading text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
+            About
+          </div>
           <button
             className={`w-full text-left px-3 py-2 rounded-lg transition-colors font-sans text-sm ${
               activeSection !== "coaching" ? "bg-blue-50 text-blue-800 font-medium" : "text-gray-900 hover:bg-blue-50"
             }`}
-            onClick={() => handleNavigation(null)}
+            onClick={() => handleNavigation("about")}
           >
             About Me
           </button>
         </div>
       </nav>
+
+      <div className="mt-auto pt-6 px-6 pb-6">
+        <div className="text-xs text-gray-900">
+          Powered by
+          <br />
+          <a
+            href="https://cloudflare.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-800 hover:underline"
+          >
+            Cloudflare
+          </a>
+        </div>
+      </div>
     </aside>
   );
 }
