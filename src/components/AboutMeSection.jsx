@@ -96,48 +96,6 @@ function AboutMeSection() {
               </div>
             </div>
           </div>
-          
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-            <div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-3">My Story</h4>
-              <p className="text-gray-700 mb-4 text-sm md:text-base">
-                I started playing pickleball in 2018 and quickly fell in love with the sport. 
-                After achieving a 5.0 rating myself, I dedicated my career to helping others 
-                reach their goals through personalized coaching and proven training methods.
-              </p>
-              <p className="text-gray-700 text-sm md:text-base">
-                My approach combines technical skill development with strategic thinking, 
-                ensuring you not only improve your game but also understand the mental aspects 
-                that separate good players from great ones.
-              </p>
-            </div>
-            
-            <div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-3">What I Offer</h4>
-              <ul className="space-y-2 text-gray-700 text-sm md:text-base">
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3 flex-shrink-0"></span>
-                  Personalized training programs
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3 flex-shrink-0"></span>
-                  Advanced technique instruction
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3 flex-shrink-0"></span>
-                  Game strategy and tactics
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3 flex-shrink-0"></span>
-                  Mental game coaching
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3 flex-shrink-0"></span>
-                  Tournament preparation
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </div>
