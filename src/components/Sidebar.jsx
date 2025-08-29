@@ -1,15 +1,6 @@
 import { Link } from "react-router";
 
 function Sidebar({ activeSection, onSelectSection, isMobileMenuOpen, setIsMobileMenuOpen }) {
-  const handleNavigation = (section) => {
-    console.log("handleNavigation called with:", section);
-    onSelectSection(section);
-    // Close mobile menu after navigation
-    if (setIsMobileMenuOpen) {
-      setIsMobileMenuOpen(false);
-    }
-  };
-
   return (
     <aside className="sidebar w-64 h-screen bg-white border-r border-gray-200 overflow-y-auto">
       {/* Mobile Close Button */}
@@ -31,30 +22,24 @@ function Sidebar({ activeSection, onSelectSection, isMobileMenuOpen, setIsMobile
       </div>
 
       <nav className="sidebar-nav p-4">
-        <button
-          className={`w-full text-left px-3 py-2 rounded-lg transition-colors font-sans text-sm cursor-pointer ${
-            activeSection === "coaching" ? "bg-blue-50 text-blue-800 font-medium" : "text-gray-900 hover:bg-blue-50"
-          }`}
-          onClick={() => {
-            console.log("Online Coaching button clicked");
-            handleNavigation("coaching");
-          }}
+        <Link
+          to="/section/coaching"
+          className={
+            activeSection === "coaching" ? "sidebar-link-active" : "sidebar-link"
+          }
         >
           Online Coaching
-        </button>
+        </Link>
 
         <div className="sidebar-section">
-          <button
-            className={`w-full text-left px-3 py-2 rounded-lg transition-colors font-sans text-sm cursor-pointer ${
-              activeSection !== "coaching" ? "bg-blue-50 text-blue-800 font-medium" : "text-gray-900 hover:bg-blue-50"
-            }`}
-            onClick={() => {
-              console.log("About Me button clicked");
-              handleNavigation("about");
-            }}
+          <Link
+            to="/section/about"
+            className={
+              activeSection === "about" ? "sidebar-link-active" : "sidebar-link"
+            }
           >
             About Me
-          </button>
+          </Link>
         </div>
       </nav>
     </aside>
