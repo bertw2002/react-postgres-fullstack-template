@@ -2,8 +2,8 @@ function OnlineCoachingSection() {
   return (
     <div className="online-coaching-section min-h-screen">
       {/* Top Section - Black Background with Header */}
-      <div className="bg-black min-h-[50vh] flex items-center justify-center">
-        <div className="text-center px-4">
+      <div className="bg-black pb-32">
+        <div className="text-center px-4 pt-16">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
             Send me a video of your gameplay!
           </h1>
@@ -18,10 +18,31 @@ function OnlineCoachingSection() {
       </div>
 
       {/* Bottom Section - Light Background with Content */}
-      <div className="bg-gray-100 min-h-[50vh]">
-        <div className="max-w-6xl mx-auto pt-8 md:pt-12">
+      <div className="bg-gray-100 -mt-32 pt-32">
+        <div className="max-w-6xl mx-auto">
           {/* Contact Me and Rates Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mx-4 md:mx-0 mb-8 md:mb-12">
+            {/* My Rates Section */}
+            <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6 text-center">
+                My Rates
+              </h3>
+              <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
+                <div className="flex items-center justify-center space-x-3">
+                  <span className="bg-gray-100 px-3 py-1 rounded-full text-sm md:text-base font-medium text-gray-800">1 Minute</span>
+                  <span className="text-2xl md:text-3xl font-bold text-gray-900">$20</span>
+                </div>
+                <div className="flex items-center justify-center space-x-3">
+                  <span className="bg-gray-100 px-3 py-1 rounded-full text-sm md:text-base font-medium text-gray-800">5 Minutes</span>
+                  <span className="text-2xl md:text-3xl font-bold text-gray-900">$40</span>
+                </div>
+                <div className="flex items-center justify-center space-x-3">
+                  <span className="bg-gray-100 px-3 py-1 rounded-full text-sm md:text-base font-medium text-gray-800">Full Game</span>
+                  <span className="text-2xl md:text-3xl font-bold text-gray-900">$100</span>
+                </div>
+              </div>
+            </div>
+
             {/* Contact Me Section */}
             <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
               <h2 className="text-2xl md:text-3xl font-bold text-black mb-6 md:mb-8 text-center">
@@ -48,27 +69,6 @@ function OnlineCoachingSection() {
                   </svg>
                   Email Me
                 </a>
-              </div>
-            </div>
-
-            {/* My Rates Section */}
-            <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6 text-center">
-                My Rates
-              </h3>
-              <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
-                <div className="flex items-center justify-center space-x-3">
-                  <span className="bg-gray-100 px-3 py-1 rounded-full text-sm md:text-base font-medium text-gray-800">1 Minute</span>
-                  <span className="text-2xl md:text-3xl font-bold text-gray-900">$20</span>
-                </div>
-                <div className="flex items-center justify-center space-x-3">
-                  <span className="bg-gray-100 px-3 py-1 rounded-full text-sm md:text-base font-medium text-gray-800">5 Minutes</span>
-                  <span className="text-2xl md:text-3xl font-bold text-gray-900">$40</span>
-                </div>
-                <div className="flex items-center justify-center space-x-3">
-                  <span className="bg-gray-100 px-3 py-1 rounded-full text-sm md:text-base font-medium text-gray-800">Full Game</span>
-                  <span className="text-2xl md:text-3xl font-bold text-gray-900">$100</span>
-                </div>
               </div>
             </div>
           </div>
