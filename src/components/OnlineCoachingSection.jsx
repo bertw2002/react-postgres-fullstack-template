@@ -1,13 +1,13 @@
 function OnlineCoachingSection() {
   return (
-    <div className="online-coaching-section min-h-screen">
+    <div className="online-coaching-section min-h-screen bg-white">
       {/* Top Section - Black Background with Header */}
-      <div className="bg-black pb-32">
+      <div className="pb-32">
         <div className="text-center px-4 pt-16">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             Send me a video of your gameplay!
           </h1>
-          <div className="text-white text-lg md:text-xl max-w-2xl mx-auto">
+          <div className="text-lg md:text-xl max-w-2xl mx-auto">
             <p className="mb-3">I will send you a <span className="text-yellow-400 font-bold">FULL</span> analysis of your gameplay, including:</p>
             <ul className="list-none space-y-2">
               <li>• What you're doing wrong</li>
@@ -17,13 +17,13 @@ function OnlineCoachingSection() {
         </div>
       </div>
 
-      {/* Bottom Section - Light Background with Content */}
-      <div className="bg-gray-100 -mt-32 pt-32">
+      {/* Bottom Section - White Background with Content */}
+      <div className="bg-white -mt-32 pt-32">
         <div className="max-w-6xl mx-auto">
           {/* Contact Me and Rates Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mx-4 md:mx-0 mb-8 md:mb-12">
             {/* My Rates Section */}
-            <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
+            <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 border border-gray-200">
               <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6 text-center">
                 My Rates
               </h3>
@@ -44,7 +44,7 @@ function OnlineCoachingSection() {
             </div>
 
             {/* Contact Me Section */}
-            <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
+            <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 border border-gray-200">
               <h2 className="text-2xl md:text-3xl font-bold text-black mb-6 md:mb-8 text-center">
                 Contact Me
               </h2>
@@ -74,14 +74,14 @@ function OnlineCoachingSection() {
           </div>
 
           {/* Payment Instructions */}
-          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 mx-4 md:mx-0 mt-8 md:mt-12">
+          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 mx-4 md:mx-0 mt-8 md:mt-12 border border-gray-200">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-6 md:mb-8">
               How to Pay
             </h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               {/* Venmo Section */}
-              <div className="bg-green-50 rounded-lg p-6 border border-green-200">
+              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-4">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -100,7 +100,7 @@ function OnlineCoachingSection() {
               </div>
 
               {/* Zelle Section */}
-              <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
