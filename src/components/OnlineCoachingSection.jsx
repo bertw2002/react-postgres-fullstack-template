@@ -4,11 +4,11 @@ function OnlineCoachingSection() {
       <div className="max-w-6xl mx-auto">
         {/* Hero Section */}
         <div className="text-center mb-8 md:mb-12 px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4">
-            Send me a video of your gameplay! 
+          <h2 className="text-2xl md:text-3xl font-bold text-black mb-3 md:mb-4">
+            Send me a video of your gameplay!
           </h2>
-          <p className="text-lg md:text-xl text-gray-600 mb-6 md:mb-8">
-            I'll send you a FULL analysis of your gameplay and give you a plan to improve to the next level. 
+          <p className="text-lg md:text-xl text-black mb-6 md:mb-8">
+            I'll send you a FULL analysis of your gameplay and give you a plan to improve to the next level.
           </p>
         </div>
 
@@ -17,15 +17,15 @@ function OnlineCoachingSection() {
           <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-white">My Rates</h3>
           <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
             <div className="flex items-center justify-center space-x-3">
-              <span className="bg-black bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium">1 Minute</span>
+              <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium">1 Minute</span>
               <span className="text-2xl md:text-3xl font-bold">$20</span>
             </div>
             <div className="flex items-center justify-center space-x-3">
-              <span className="bg-black bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium">5 Minutes</span>
+              <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium">5 Minutes</span>
               <span className="text-2xl md:text-3xl font-bold">$40</span>
             </div>
             <div className="flex items-center justify-center space-x-3">
-              <span className="bg-black bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium">Full Game</span>
+              <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium">Full Game</span>
               <span className="text-2xl md:text-3xl font-bold">$100</span>
             </div>
           </div>
@@ -48,17 +48,12 @@ function OnlineCoachingSection() {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-gray-900">Venmo</h4>
-                  <p className="text-green-700 font-medium">Recommended</p>
                 </div>
               </div>
               <div className="space-y-3">
                 <p className="text-gray-700">
                   Send payment to: <span className="font-bold text-green-600">@albert-wan-2</span>
                 </p>
-                <div className="bg-white rounded-lg p-3 border border-green-300">
-                  <p className="text-sm text-gray-600 mb-2">Include in your payment note:</p>
-                  <p className="text-sm font-medium text-gray-800">"Pickleball Analysis - [Your Name]"</p>
-                </div>
               </div>
             </div>
 
@@ -72,18 +67,12 @@ function OnlineCoachingSection() {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-gray-900">Zelle</h4>
-                  <p className="text-blue-700 font-medium">Alternative Option</p>
                 </div>
               </div>
               <div className="space-y-3">
                 <p className="text-gray-700">
                   Zelle details will be provided through DM after you contact me.
                 </p>
-                <div className="bg-white rounded-lg p-3 border border-blue-300">
-                  <p className="text-sm text-gray-600 mb-2">Contact me first for:</p>
-                  <p className="text-sm font-medium text-gray-800">• Zelle email/phone</p>
-                  <p className="text-sm font-medium text-gray-800">• Payment instructions</p>
-                </div>
               </div>
             </div>
           </div>
@@ -115,11 +104,8 @@ function OnlineCoachingSection() {
           {/* Contact Info */}
           <div className="mt-6 text-center">
             <p className="text-gray-600 mb-3">
-              Questions about payment? Contact me directly!
+              Questions about payment? Contact me directly on Instagram @albertwan_pb! 
             </p>
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-              Contact for Zelle Details
-            </button>
           </div>
         </div>
       </div>
