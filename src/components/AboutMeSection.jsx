@@ -6,14 +6,14 @@ function AboutMeSection() {
         {/* Coach Profile */}
         <div className="bg-white rounded-lg shadow-lg p-4 md:p-8 mb-6 md:mb-8 mx-4 md:mx-0">
           {/* Credentials */}
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-6 mb-6">
+          <div className="bg-white rounded-lg p-6 mb-6 border border-gray-200">
             <h4 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 text-center">My Credentials</h4>
             <div className="grid md:grid-cols-2 gap-6 text-center">
-              <div className="bg-white rounded-lg p-4 shadow-sm">
+              <div className="bg-gray-50 rounded-lg p-4 shadow-sm">
                 <div className="text-2xl md:text-3xl font-bold text-blue-600 mb-2">Top 150</div>
                 <p className="text-gray-700 font-medium">PPA Men's Doubles Ranking</p>
               </div>
-              <div className="bg-white rounded-lg p-4 shadow-sm">
+              <div className="bg-gray-50 rounded-lg p-4 shadow-sm">
                 <div className="text-2xl md:text-3xl font-bold text-blue-600 mb-2">5.377</div>
                 <p className="text-gray-700 font-medium">DUPR Rating</p>
               </div>
@@ -21,7 +21,7 @@ function AboutMeSection() {
           </div>
 
           {/* Tournament Timeline */}
-          <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-6 mb-6">
+          <div className="bg-white rounded-lg p-6 mb-6 border border-gray-200">
             <h4 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">My Improvement Timeline</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-white rounded-lg p-4 shadow-sm text-center">
