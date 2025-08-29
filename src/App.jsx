@@ -93,7 +93,7 @@ function App() {
           <p className="text-gray-900">
             {activeSection === "coaching"
               ? "Send me a video of your gameplay and I will give you detailed analysis of: what you're doing wrong and what you can do to reach the next level."
-              : "Learn more about your pickleball coach and my journey"}
+              : "3.3 -> 5.0 in 7 months. Learn more about my journey."}
           </p>
         </div>
 
