@@ -40,9 +40,6 @@ function Sidebar({ activeSection, onSelectSection, isMobileMenuOpen, setIsMobile
         </button>
 
         <div className="sidebar-section mt-6">
-          <div className="sidebar-heading text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
-            About
-          </div>
           <button
             className={`w-full text-left px-3 py-2 rounded-lg transition-colors font-sans text-sm ${
               activeSection !== "coaching" ? "bg-blue-50 text-blue-800 font-medium" : "text-gray-900 hover:bg-blue-50"
