@@ -23,8 +23,8 @@ function AboutMeSection() {
           {/* Tournament Timeline */}
           <div className="bg-white rounded-lg p-6 mb-6 border border-gray-200">
             <h4 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">My Improvement Timeline</h4>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-white rounded-lg p-4 shadow-sm text-center">
+            <div className="space-y-4">
+              <div className="bg-white rounded-lg p-4 shadow-sm text-center border border-gray-200">
                 <div className="mb-3">
                   <div className="font-semibold text-gray-900">September 2024</div>
                   <div className="text-gray-600">3.5 Local Tournament (went 2-2)</div>
@@ -32,7 +32,7 @@ function AboutMeSection() {
                 <div className="bg-blue-800 text-white px-4 py-2 rounded-lg inline-block font-bold text-lg">DUPR 3.3</div>
               </div>
               
-              <div className="bg-white rounded-lg p-4 shadow-sm text-center">
+              <div className="bg-white rounded-lg p-4 shadow-sm text-center border border-gray-200">
                 <div className="mb-3">
                   <div className="font-semibold text-gray-900">December 2024</div>
                   <div className="text-gray-600">4.5 Local Tournament (went undefeated)</div>
@@ -40,7 +40,7 @@ function AboutMeSection() {
                 <div className="bg-blue-800 text-white px-4 py-2 rounded-lg inline-block font-bold text-lg">DUPR 4.0</div>
               </div>
               
-              <div className="bg-white rounded-lg p-4 shadow-sm text-center">
+              <div className="bg-white rounded-lg p-4 shadow-sm text-center border border-gray-200">
                 <div className="mb-3">
                   <div className="font-semibold text-gray-900">December 2024</div>
                   <div className="text-gray-600">5.0 PPA San Clemente (went 2-2)</div>
@@ -48,7 +48,7 @@ function AboutMeSection() {
                 <div className="bg-blue-800 text-white px-4 py-2 rounded-lg inline-block font-bold text-lg">DUPR 4.0</div>
               </div>
               
-              <div className="bg-white rounded-lg p-4 shadow-sm text-center">
+              <div className="bg-white rounded-lg p-4 shadow-sm text-center border border-gray-200">
                 <div className="mb-3">
                   <div className="font-semibold text-gray-900">January 2025</div>
                   <div className="text-gray-600">PPA Masters Pro Qualifiers (qualified, lost to Emmrich / De la Rosa)</div>
@@ -56,7 +56,7 @@ function AboutMeSection() {
                 <div className="bg-blue-800 text-white px-4 py-2 rounded-lg inline-block font-bold text-lg">DUPR 4.3</div>
               </div>
               
-              <div className="bg-white rounded-lg p-4 shadow-sm text-center">
+              <div className="bg-white rounded-lg p-4 shadow-sm text-center border border-gray-200">
                 <div className="mb-3">
                   <div className="font-semibold text-gray-900">Feburary 2025</div>
                   <div className="text-gray-600">PPA Tucson Pro Qualifiers (qualified, lost to Trinh / Cincola)</div>
@@ -64,7 +64,7 @@ function AboutMeSection() {
                 <div className="bg-blue-800 text-white px-4 py-2 rounded-lg inline-block font-bold text-lg">DUPR 4.6</div>
               </div>
               
-              <div className="bg-white rounded-lg p-4 shadow-sm text-center">
+              <div className="bg-white rounded-lg p-4 shadow-sm text-center border border-gray-200">
                 <div className="mb-3">
                   <div className="font-semibold text-gray-900">March 2025</div>
                   <div className="text-gray-600">First open level local tournament (Silver)</div>
@@ -72,7 +72,7 @@ function AboutMeSection() {
                 <div className="bg-blue-800 text-white px-4 py-2 rounded-lg inline-block font-bold text-lg">DUPR 4.8</div>
               </div>
               
-              <div className="bg-white rounded-lg p-4 shadow-sm text-center">
+              <div className="bg-white rounded-lg p-4 shadow-sm text-center border border-gray-200">
                 <div className="mb-3">
                   <div className="font-semibold text-gray-900">April 2025</div>
                   <div className="text-gray-600">First open level mixed local tournament (Silver)</div>
@@ -80,7 +80,7 @@ function AboutMeSection() {
                 <div className="bg-blue-800 text-white px-4 py-2 rounded-lg inline-block font-bold text-lg">DUPR 5.0</div>
               </div>
               
-              <div className="bg-white rounded-lg p-4 shadow-sm text-center">
+              <div className="bg-white rounded-lg p-4 shadow-sm text-center border border-gray-200">
                 <div className="mb-3">
                   <div className="font-semibold text-gray-900">May 2025</div>
                   <div className="text-gray-600">PPA Idaho Challenger (7th place)</div>
@@ -88,7 +88,7 @@ function AboutMeSection() {
                 <div className="bg-blue-800 text-white px-4 py-2 rounded-lg inline-block font-bold text-lg">DUPR 5.1</div>
               </div>
               
-              <div className="bg-white rounded-lg p-4 shadow-sm text-center">
+              <div className="bg-white rounded-lg p-4 shadow-sm text-center border border-gray-200">
                 <div className="mb-3">
                   <div className="font-semibold text-gray-900">June 2025</div>
                   <div className="text-gray-600">PPA San Clemente Pro Qualifiers (qualified, lost to Hovenier / Koller)</div>
@@ -96,7 +96,7 @@ function AboutMeSection() {
                 <div className="bg-blue-800 text-white px-4 py-2 rounded-lg inline-block font-bold text-lg">DUPR 5.2</div>
               </div>
               
-              <div className="bg-white rounded-lg p-4 shadow-sm text-center">
+              <div className="bg-white rounded-lg p-4 shadow-sm text-center border border-gray-200">
                 <div className="mb-3">
                   <div className="font-semibold text-gray-900">August 2025</div>
                   <div className="text-gray-600">PPA Las Vegas Pro Qualifiers (qualified for men's and mixed doubles)</div>
