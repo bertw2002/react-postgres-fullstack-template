@@ -1,6 +1,14 @@
 import { Link } from "react-router";
 
-function Sidebar({ activeSection, onSelectSection }) {
+function Sidebar({ activeSection, onSelectSection, isMobileMenuOpen, setIsMobileMenuOpen }) {
+  const handleNavigation = (section) => {
+    onSelectSection(section);
+    // Close mobile menu after navigation
+    if (setIsMobileMenuOpen) {
+      setIsMobileMenuOpen(false);
+    }
+  };
+
   return (
     <aside className="sidebar w-64 h-screen bg-white shadow-lg md:shadow-none overflow-y-auto">
       {/* Mobile Close Button */}
@@ -8,7 +16,7 @@ function Sidebar({ activeSection, onSelectSection }) {
         <div className="sidebar-title text-lg font-bold text-gray-900">Pickleball Coach</div>
         <button 
           className="text-gray-500 hover:text-gray-700"
-          onClick={() => onSelectSection(null)}
+          onClick={() => setIsMobileMenuOpen(false)}
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -27,6 +35,7 @@ function Sidebar({ activeSection, onSelectSection }) {
           className={
             activeSection === null ? "sidebar-link-active" : "sidebar-link"
           }
+          onClick={() => handleNavigation(null)}
         >
           About Me
         </Link>
@@ -40,6 +49,7 @@ function Sidebar({ activeSection, onSelectSection }) {
             className={
               activeSection === "coaching" ? "sidebar-link-active" : "sidebar-link"
             }
+            onClick={() => handleNavigation("coaching")}
           >
             Online Coaching
           </Link>
