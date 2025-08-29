@@ -44,8 +44,8 @@ function App() {
         />
       )}
 
-      {/* Sidebar - Mobile and Desktop */}
-      <div className={`${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 transition-transform duration-300 ease-in-out fixed md:relative z-50 md:z-auto`}>
+      {/* Desktop Sidebar */}
+      <div className="hidden md:block">
         <Sidebar
           activeSection={activeSection}
           onSelectSection={handleSelectSection}
@@ -53,6 +53,18 @@ function App() {
           setIsMobileMenuOpen={setIsMobileMenuOpen}
         />
       </div>
+
+      {/* Mobile Sidebar */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden fixed top-0 left-0 h-full w-64 bg-white shadow-xl z-50 overflow-y-auto">
+          <Sidebar
+            activeSection={activeSection}
+            onSelectSection={handleSelectSection}
+            isMobileMenuOpen={isMobileMenuOpen}
+            setIsMobileMenuOpen={setIsMobileMenuOpen}
+          />
+        </div>
+      )}
 
       <main className="main-content md:ml-64 pt-16 md:pt-0">
         {/* Breadcrumbs for main page */}
