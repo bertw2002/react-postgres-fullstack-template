@@ -8,6 +8,7 @@ import OnlineCoachingSection from "./components/OnlineCoachingSection";
 function App() {
   const navigate = useNavigate();
   const params = useParams();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Get route parameters
   const { section } = params;
@@ -19,16 +20,39 @@ function App() {
     } else {
       navigate("/");
     }
+    // Close mobile menu when navigating
+    setIsMobileMenuOpen(false);
   };
 
   return (
     <div className="layout">
-      <Sidebar
-        activeSection={activeSection}
-        onSelectSection={handleSelectSection}
-      />
+      {/* Mobile Menu Button */}
+      <button
+        className="md:hidden fixed top-4 left-4 z-50 bg-blue-600 text-white p-2 rounded-lg shadow-lg"
+        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
 
-      <main className="main-content">
+      {/* Mobile Menu Overlay */}
+      {isMobileMenuOpen && (
+        <div 
+          className="md:hidden fixed inset-0 bg-black bg-opacity-50 z-40"
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+      )}
+
+      {/* Sidebar - Hidden on mobile when closed */}
+      <div className={`${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 transition-transform duration-300 ease-in-out fixed md:relative z-30`}>
+        <Sidebar
+          activeSection={activeSection}
+          onSelectSection={handleSelectSection}
+        />
+      </div>
+
+      <main className="main-content md:ml-64 pt-16 md:pt-0">
         {/* Breadcrumbs for main page */}
         {!section && (
           <Breadcrumbs
