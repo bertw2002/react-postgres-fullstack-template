@@ -78,7 +78,7 @@ p {
 }
 
 .sidebar {
-  @apply fixed top-0 left-0 h-full w-64 bg-white border-r border-gray-200 overflow-y-auto z-30;
+  @apply fixed top-0 left-0 h-full w-64 bg-white border-r border-gray-200 overflow-y-auto z-50;
 }
 
 .sidebar-title {
@@ -121,6 +121,13 @@ p {
   
   .sidebar {
     @apply shadow-xl;
+  }
+}
+
+/* Desktop sidebar positioning */
+@media (min-width: 768px) {
+  .sidebar {
+    @apply relative z-auto;
   }
 }
 
