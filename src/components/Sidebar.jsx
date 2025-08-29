@@ -55,21 +55,6 @@ function Sidebar({ activeSection, onSelectSection, isMobileMenuOpen, setIsMobile
           </Link>
         </div>
       </nav>
-
-      <div className="mt-auto pt-6 px-6 pb-6">
-        <div className="text-xs text-gray-900">
-          Powered by
-          <br />
-          <a
-            href="https://cloudflare.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-800 hover:underline"
-          >
-            Cloudflare
-          </a>
-        </div>
-      </div>
     </aside>
   );
 }
