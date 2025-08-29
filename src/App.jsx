@@ -28,22 +28,6 @@ function App() {
     }
   }, []); // Only run once on mount
 
-  const handleSelectSection = (section) => {
-    console.log("handleSelectSection called with:", section);
-    console.log("Current pathname before navigation:", window.location.pathname);
-    
-    if (section === "coaching") {
-      console.log("Navigating to coaching");
-      navigate("/section/coaching");
-    } else if (section === "about") {
-      console.log("Navigating to about");
-      navigate("/");
-    }
-    
-    console.log("Navigation completed");
-    // Close mobile menu after navigating
-    setIsMobileMenuOpen(false);
-  };
   return (
     <div className="layout">
       {/* Mobile Menu Button */}
@@ -68,7 +52,7 @@ function App() {
       <div className="hidden md:block">
         <Sidebar
           activeSection={activeSection}
-          onSelectSection={handleSelectSection}
+          onSelectSection={() => {}} // This function is no longer needed
           isMobileMenuOpen={isMobileMenuOpen}
           setIsMobileMenuOpen={setIsMobileMenuOpen}
         />
@@ -79,7 +63,7 @@ function App() {
         <div className="md:hidden fixed top-0 left-0 h-full w-64 bg-white shadow-xl z-50 overflow-y-auto">
           <Sidebar
             activeSection={activeSection}
-            onSelectSection={handleSelectSection}
+            onSelectSection={() => {}} // This function is no longer needed
             isMobileMenuOpen={isMobileMenuOpen}
             setIsMobileMenuOpen={setIsMobileMenuOpen}
           />
@@ -97,9 +81,9 @@ function App() {
           ]}
           onNavigate={(value) => {
             if (value === "coaching") {
-              handleSelectSection("coaching");
+              navigate("/section/coaching");
             } else if (value === "about") {
-              handleSelectSection("about");
+              navigate("/section/about");
             }
           }}
         />
