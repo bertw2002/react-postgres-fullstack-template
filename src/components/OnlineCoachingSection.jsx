@@ -33,6 +33,98 @@ function OnlineCoachingSection() {
             Book a Session
           </button>
         </div>
+
+        {/* Payment Instructions */}
+        <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 mx-4 md:mx-0 mt-8 md:mt-12">
+          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-6 md:mb-8">
+            How to Pay
+          </h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            {/* Venmo Section */}
+            <div className="bg-green-50 rounded-lg p-6 border border-green-200">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="text-xl font-bold text-gray-900">Venmo</h4>
+                  <p className="text-green-700 font-medium">Recommended</p>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <p className="text-gray-700">
+                  Send payment to: <span className="font-bold text-green-600">@albert-wan-2</span>
+                </p>
+                <div className="bg-white rounded-lg p-3 border border-green-300">
+                  <p className="text-sm text-gray-600 mb-2">Include in your payment note:</p>
+                  <p className="text-sm font-medium text-gray-800">"Pickleball Analysis - [Your Name]"</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Zelle Section */}
+            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="text-xl font-bold text-gray-900">Zelle</h4>
+                  <p className="text-blue-700 font-medium">Alternative Option</p>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <p className="text-gray-700">
+                  Zelle details will be provided through DM after you contact me.
+                </p>
+                <div className="bg-white rounded-lg p-3 border border-blue-300">
+                  <p className="text-sm text-gray-600 mb-2">Contact me first for:</p>
+                  <p className="text-sm font-medium text-gray-800">• Zelle email/phone</p>
+                  <p className="text-sm font-medium text-gray-800">• Payment instructions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Payment Process */}
+          <div className="mt-8 md:mt-10 bg-gray-50 rounded-lg p-6 border border-gray-200">
+            <h4 className="text-lg md:text-xl font-semibold text-gray-900 mb-4 text-center">
+              Payment Process
+            </h4>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mx-auto mb-3">1</div>
+                <h5 className="font-semibold text-gray-900 mb-2">Send Payment</h5>
+                <p className="text-sm text-gray-600">Pay via Venmo or Zelle with your name in the note</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mx-auto mb-3">2</div>
+                <h5 className="font-semibold text-gray-900 mb-2">Send Screenshot</h5>
+                <p className="text-sm text-gray-600">DM me a picture of your payment confirmation</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mx-auto mb-3">3</div>
+                <h5 className="font-semibold text-gray-900 mb-2">Get Analysis</h5>
+                <p className="text-sm text-gray-600">I'll confirm receipt and create your analysis document</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Contact Info */}
+          <div className="mt-6 text-center">
+            <p className="text-gray-600 mb-3">
+              Questions about payment? Contact me directly!
+            </p>
+            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+              Contact for Zelle Details
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
