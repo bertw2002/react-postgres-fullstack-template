@@ -4,12 +4,12 @@ function OnlineCoachingSection() {
       {/* Top Section - Black Background with Header */}
       <div className="pb-32">
         <div className="text-center px-4 pt-16">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+          <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             Send me a video of your gameplay!
           </h1>
           <div className="text-lg md:text-xl max-w-2xl mx-auto">
-            <p className="mb-3">I will send you a <span className="text-yellow-400 font-bold">FULL</span> analysis of your gameplay, including:</p>
-            <ul className="list-none space-y-2">
+            <p className="mb-3 text-white">I will send you a <span className="text-yellow-400 font-bold">FULL</span> analysis of your gameplay, including:</p>
+            <ul className="list-none space-y-2 text-white">
               <li>• What you're doing wrong</li>
               <li>• What you can do to reach the next level</li>
             </ul>
