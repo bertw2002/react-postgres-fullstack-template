@@ -101,7 +101,7 @@ function App() {
           }}
         />
 
-        <div className="page-header">
+        <div className="page-header text-center">
           <h1>{activeSection === "coaching" ? "Send me a video of your gameplay!" : "About Me"}</h1>
           <p className="text-gray-900">
             {activeSection === "coaching"
