@@ -5,22 +5,32 @@ function OnlineCoachingSection() {
         {/* Hero Section */}
         <div className="text-center mb-8 md:mb-12 px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4">
-            Online Pickleball Coaching Programs
+            Send me a video of your gameplay! 
           </h2>
           <p className="text-lg md:text-xl text-gray-600 mb-6 md:mb-8">
-            Transform your game with personalized online coaching designed to get you to 5.0+ in 1 year
+            I'll send you a FULL analysis of your gameplay and give you a plan to improve to the next level. 
           </p>
         </div>
 
-
         {/* Call to Action */}
-        <div className="text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-6 md:p-8 text-white mx-4 md:mx-0">
-          <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Ready to Transform Your Game?</h3>
-          <p className="text-lg md:text-xl mb-4 md:mb-6 opacity-90">
-            Join hundreds of players who have already reached their pickleball goals
-          </p>
-          <button className="bg-white text-blue-600 py-2 md:py-3 px-6 md:px-8 rounded-lg text-base md:text-lg font-semibold hover:bg-gray-100 transition-colors">
-            Start Your Journey Today
+        <div className="text-center bg-gradient-to-br from-green-500 via-blue-600 to-purple-600 rounded-xl p-8 md:p-10 text-white mx-4 md:mx-0 shadow-2xl">
+          <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-white">My Rates</h3>
+          <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
+            <div className="flex items-center justify-center space-x-3">
+              <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium">1 Minute</span>
+              <span className="text-2xl md:text-3xl font-bold">$20</span>
+            </div>
+            <div className="flex items-center justify-center space-x-3">
+              <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium">5 Minutes</span>
+              <span className="text-2xl md:text-3xl font-bold">$40</span>
+            </div>
+            <div className="flex items-center justify-center space-x-3">
+              <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium">Full Game</span>
+              <span className="text-2xl md:text-3xl font-bold">$100</span>
+            </div>
+          </div>
+          <button className="bg-white text-blue-600 py-3 md:py-4 px-8 md:px-10 rounded-lg text-lg md:text-xl font-semibold hover:bg-gray-100 transition-all duration-200 transform hover:scale-105 shadow-lg">
+            Book a Session
           </button>
         </div>
       </div>
