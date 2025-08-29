@@ -5,11 +5,30 @@ function OnlineCoachingSection() {
         {/* Hero Section */}
         <div className="text-center mb-8 md:mb-12 px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-black mb-3 md:mb-4">
-            Send me a video of your gameplay!
+            Contact Me
           </h2>
-          <p className="text-lg md:text-xl text-black mb-6 md:mb-8">
-            I'll send you a FULL analysis of your gameplay and give you a plan to improve to the next level.
-          </p>
+          <div className="space-y-3 text-lg md:text-xl text-black">
+            <p>
+              <span className="font-semibold">Instagram:</span>{' '}
+              <a 
+                href="https://www.instagram.com/albertwan_pb/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 font-semibold"
+              >
+                @albertwan_pb
+              </a>
+            </p>
+            <p>
+              <span className="font-semibold">Email:</span>{' '}
+              <a 
+                href="mailto:albertwanpickleball@gmail.com"
+                className="text-blue-600 hover:text-blue-800 font-semibold"
+              >
+                albertwanpickleball@gmail.com
+              </a>
+            </p>
+          </div>
         </div>
 
         {/* Call to Action */}
