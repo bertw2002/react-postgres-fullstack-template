@@ -30,29 +30,27 @@ function Sidebar({ activeSection, onSelectSection, isMobileMenuOpen, setIsMobile
       </div>
 
       <nav className="sidebar-nav p-4">
-        <Link
-          to="/section/coaching"
-          className={
-            activeSection === "coaching" ? "sidebar-link-active" : "sidebar-link"
-          }
+        <button
+          className={`w-full text-left px-3 py-2 rounded-lg transition-colors font-sans text-sm ${
+            activeSection === "coaching" ? "bg-blue-50 text-blue-800 font-medium" : "text-gray-900 hover:bg-blue-50"
+          }`}
           onClick={() => handleNavigation("coaching")}
         >
           Online Coaching
-        </Link>
+        </button>
 
         <div className="sidebar-section mt-6">
           <div className="sidebar-heading text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
             About
           </div>
-          <Link
-            to="/"
-            className={
-              activeSection === null ? "sidebar-link-active" : "sidebar-link"
-            }
+          <button
+            className={`w-full text-left px-3 py-2 rounded-lg transition-colors font-sans text-sm ${
+              activeSection !== "coaching" ? "bg-blue-50 text-blue-800 font-medium" : "text-gray-900 hover:bg-blue-50"
+            }`}
             onClick={() => handleNavigation(null)}
           >
             About Me
-          </Link>
+          </button>
         </div>
       </nav>
 
