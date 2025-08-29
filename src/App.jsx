@@ -15,9 +15,12 @@ function App() {
   const activeSection = section ? decodeURIComponent(section) : "coaching";
 
   const handleSelectSection = (section) => {
+    console.log("handleSelectSection called with:", section);
     if (section === "coaching") {
+      console.log("Navigating to coaching");
       navigate("/section/coaching");
     } else if (section === "about") {
+      console.log("Navigating to about");
       navigate("/");
     }
     // Close mobile menu after navigating
@@ -26,8 +29,8 @@ function App() {
 
   // Set default section to coaching only on first load
   useEffect(() => {
-    if (!section && window.location.pathname === "/") {
-      // Only redirect if we're at the root path
+    // Only redirect if we're at the root path AND no section is specified
+    if (window.location.pathname === "/" && !section) {
       navigate("/section/coaching", { replace: true });
     }
   }, []); // Empty dependency array - only run once
