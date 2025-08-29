@@ -20,17 +20,17 @@ function App() {
     } else {
       navigate("/");
     }
-    // Close mobile menu when navigating
+    // Close mobile menu after navigating
     setIsMobileMenuOpen(false);
   };
 
-  // Set default section to coaching if no section is specified
+  // Set default section to coaching only on first load
   useEffect(() => {
-    if (!section) {
-      // Redirect to coaching section by default
+    if (!section && window.location.pathname === "/") {
+      // Only redirect if we're at the root path
       navigate("/section/coaching", { replace: true });
     }
-  }, [section, navigate]);
+  }, []); // Empty dependency array - only run once
 
   return (
     <div className="layout">
