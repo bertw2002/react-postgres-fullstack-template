@@ -10,7 +10,7 @@ function Sidebar({ activeSection, onSelectSection, isMobileMenuOpen, setIsMobile
   };
 
   return (
-    <aside className="sidebar w-64 h-screen bg-white shadow-lg md:shadow-none overflow-y-auto">
+    <aside className="sidebar w-64 h-screen bg-white border-r border-gray-200 overflow-y-auto">
       {/* Mobile Close Button */}
       <div className="md:hidden flex justify-between items-center p-4 border-b border-gray-200">
         <div className="sidebar-title text-lg font-bold text-gray-900">Pickleball Coach</div>
@@ -55,6 +55,21 @@ function Sidebar({ activeSection, onSelectSection, isMobileMenuOpen, setIsMobile
           </Link>
         </div>
       </nav>
+
+      <div className="mt-auto pt-6 px-6 pb-6">
+        <div className="text-xs text-gray-900">
+          Powered by
+          <br />
+          <a
+            href="https://cloudflare.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-800 hover:underline"
+          >
+            Cloudflare
+          </a>
+        </div>
+      </div>
     </aside>
   );
 }
