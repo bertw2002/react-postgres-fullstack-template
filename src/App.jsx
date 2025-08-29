@@ -92,7 +92,7 @@ function App() {
           <h1>{activeSection === "coaching" ? "Send me a video of your gameplay!" : "About Me"}</h1>
           <p className="text-gray-900">
             {activeSection === "coaching"
-              ? "• What you're doing wrong\n• What you can do to reach the next level"
+              ? "I will send you a FULL analysis of your gameplay, including:\n• What you're doing wrong\n• What you can do to reach the next level"
               : "3.3 -> 5.0 in 7 months. Learn more about my journey."}
           </p>
         </div>
