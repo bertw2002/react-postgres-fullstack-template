@@ -1,8 +1,7 @@
 function AboutMeSection() {
   return (
-    <div className="about-me-section bg-gray-900 min-h-screen">
+    <div className="about-me-section">
       <div className="max-w-4xl mx-auto">
-
         {/* Coach Profile */}
         <div className="bg-white rounded-lg shadow-lg p-4 md:p-8 mb-6 md:mb-8 mx-4 md:mx-0">
           {/* Credentials */}
