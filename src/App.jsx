@@ -19,8 +19,19 @@ function App() {
   console.log("Current activeSection:", activeSection);
   console.log("Current pathname:", window.location.pathname);
 
+  // Set default page only on very first load
+  useEffect(() => {
+    // Only redirect if we're at the root path with no section parameter
+    if (window.location.pathname === "/" && !section && !localStorage.getItem('hasVisited')) {
+      localStorage.setItem('hasVisited', 'true');
+      navigate("/section/coaching", { replace: true });
+    }
+  }, []); // Only run once on mount
+
   const handleSelectSection = (section) => {
     console.log("handleSelectSection called with:", section);
+    console.log("Current pathname before navigation:", window.location.pathname);
+    
     if (section === "coaching") {
       console.log("Navigating to coaching");
       navigate("/section/coaching");
@@ -28,19 +39,11 @@ function App() {
       console.log("Navigating to about");
       navigate("/");
     }
+    
+    console.log("Navigation completed");
     // Close mobile menu after navigating
     setIsMobileMenuOpen(false);
   };
-
-  // Remove the problematic useEffect that was redirecting users
-
-  // Set default page only on first load
-  useEffect(() => {
-    if (window.location.pathname === "/" && !section) {
-      navigate("/section/coaching", { replace: true });
-    }
-  }, []); // Only run once on mount
-
   return (
     <div className="layout">
       {/* Mobile Menu Button */}
