@@ -29,6 +29,16 @@ function OnlineCoachingSection() {
               Email Me
             </a>
           </div>
+          
+          <div className="mt-8 text-center">
+            <p className="text-lg md:text-xl text-black mb-4">
+              Send me a video of your gameplay and I will give you detailed analysis of:
+            </p>
+            <div className="space-y-2 text-base md:text-lg text-black">
+              <p>• What you're doing wrong</p>
+              <p>• What you can do to reach the next level</p>
+            </div>
+          </div>
         </div>
 
         {/* Call to Action */}
@@ -38,15 +48,15 @@ function OnlineCoachingSection() {
           </h3>
           <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
             <div className="flex items-center justify-center space-x-3">
-              <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium text-white">1 Minute</span>
+              <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium text-black">1 Minute</span>
               <span className="text-2xl md:text-3xl font-bold">$20</span>
             </div>
             <div className="flex items-center justify-center space-x-3">
-              <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium text-white">5 Minutes</span>
+              <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium text-black">5 Minutes</span>
               <span className="text-2xl md:text-3xl font-bold">$40</span>
             </div>
             <div className="flex items-center justify-center space-x-3">
-              <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium text-white">Full Game</span>
+              <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium text-black">Full Game</span>
               <span className="text-2xl md:text-3xl font-bold">$100</span>
             </div>
           </div>
@@ -120,21 +130,6 @@ function OnlineCoachingSection() {
                 <p className="text-sm text-gray-600">I'll confirm receipt and create your analysis document</p>
               </div>
             </div>
-          </div>
-
-          {/* Contact Info */}
-          <div className="mt-6 text-center">
-            <p className="text-gray-600 mb-3">
-              Questions about payment? Contact me directly on Instagram{' '}
-              <a 
-                href="https://www.instagram.com/albertwan_pb/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 font-semibold"
-              >
-                @albertwan_pb
-              </a>!
-            </p>
           </div>
         </div>
       </div>
