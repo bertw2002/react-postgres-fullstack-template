@@ -17,21 +17,18 @@ function OnlineCoachingSection() {
           <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-white">My Rates</h3>
           <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
             <div className="flex items-center justify-center space-x-3">
-              <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium">1 Minute</span>
+              <span className="bg-black bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium">1 Minute</span>
               <span className="text-2xl md:text-3xl font-bold">$20</span>
             </div>
             <div className="flex items-center justify-center space-x-3">
-              <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium">5 Minutes</span>
+              <span className="bg-black bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium">5 Minutes</span>
               <span className="text-2xl md:text-3xl font-bold">$40</span>
             </div>
             <div className="flex items-center justify-center space-x-3">
-              <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium">Full Game</span>
+              <span className="bg-black bg-opacity-20 px-3 py-1 rounded-full text-sm md:text-base font-medium">Full Game</span>
               <span className="text-2xl md:text-3xl font-bold">$100</span>
             </div>
           </div>
-          <button className="bg-white text-blue-600 py-3 md:py-4 px-8 md:px-10 rounded-lg text-lg md:text-xl font-semibold hover:bg-gray-100 transition-all duration-200 transform hover:scale-105 shadow-lg">
-            Book a Session
-          </button>
         </div>
 
         {/* Payment Instructions */}
