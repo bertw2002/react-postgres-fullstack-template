@@ -1,6 +1,6 @@
 function OnlineCoachingSection() {
   return (
-    <div className="online-coaching-section min-h-screen bg-white">
+    <div className="online-coaching-section min-h-screen bg-black">
       {/* Top Section - Black Background with Header */}
       <div className="pb-32">
         <div className="text-center px-4 pt-16">
@@ -48,7 +48,7 @@ function OnlineCoachingSection() {
               <h2 className="text-2xl md:text-3xl font-bold text-black mb-6 md:mb-8 text-center">
                 Contact Me
               </h2>
-              <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+              <div className="flex flex-col items-center justify-center gap-4 md:gap-6">
                 <a 
                   href="https://www.instagram.com/albertwan_pb/" 
                   target="_blank" 
