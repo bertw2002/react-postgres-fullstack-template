@@ -17,7 +17,7 @@ function App() {
   const handleSelectSection = (section) => {
     if (section === "coaching") {
       navigate("/section/coaching");
-    } else {
+    } else if (section === "about") {
       navigate("/");
     }
     // Close mobile menu after navigating
