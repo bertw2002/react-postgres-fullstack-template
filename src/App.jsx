@@ -89,12 +89,20 @@ function App() {
         />
 
         <div className="page-header text-center">
-          <h1>{activeSection === "coaching" ? "Send me a video of your gameplay!" : "About Me"}</h1>
-          <p className="text-gray-900">
-            {activeSection === "coaching"
-              ? "I will send you a FULL analysis of your gameplay, including:\n• What you're doing wrong\n• What you can do to reach the next level"
-              : "3.3 -> 5.0 in 7 months. Learn more about my journey."}
-          </p>
+          <h1 className="text-white">{activeSection === "coaching" ? "Send me a video of your gameplay!" : "About Me"}</h1>
+          {activeSection === "coaching" ? (
+            <div className="text-white">
+              <p className="text-lg md:text-xl mb-3">I will send you a <span className="text-yellow-400 font-bold">FULL</span> analysis of your gameplay, including:</p>
+              <ul className="list-none space-y-1 mt-2 text-base md:text-lg">
+                <li>• What you're doing wrong</li>
+                <li>• What you can do to reach the next level</li>
+              </ul>
+            </div>
+          ) : (
+            <p className="text-white">
+              3.3 → 5.0 in 7 months. Learn more about my journey.
+            </p>
+          )}
         </div>
 
         {/* Content based on section */}
