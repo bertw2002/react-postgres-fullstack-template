@@ -89,14 +89,14 @@ function App() {
           items={[
             { label: "Online Coaching", value: "coaching" },
             ...(activeSection !== "coaching"
-              ? [{ label: activeSection, value: activeSection }]
+              ? [{ label: "About Me", value: "about" }]
               : []),
           ]}
           onNavigate={(value) => {
             if (value === "coaching") {
               handleSelectSection("coaching");
-            } else {
-              handleSelectSection(null);
+            } else if (value === "about") {
+              handleSelectSection("about");
             }
           }}
         />
@@ -111,11 +111,16 @@ function App() {
         </div>
 
         {/* Content based on section */}
-        {activeSection === "coaching" ? (
-          <OnlineCoachingSection />
-        ) : (
-          <AboutMeSection />
-        )}
+        {(() => {
+          console.log("Rendering content for activeSection:", activeSection);
+          if (activeSection === "coaching") {
+            console.log("Rendering OnlineCoachingSection");
+            return <OnlineCoachingSection />;
+          } else {
+            console.log("Rendering AboutMeSection");
+            return <AboutMeSection />;
+          }
+        })()}
       </main>
     </div>
   );
