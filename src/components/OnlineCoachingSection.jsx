@@ -104,7 +104,15 @@ function OnlineCoachingSection() {
           {/* Contact Info */}
           <div className="mt-6 text-center">
             <p className="text-gray-600 mb-3">
-              Questions about payment? Contact me directly on Instagram @albertwan_pb! 
+              Questions about payment? Contact me directly on Instagram{' '}
+              <a 
+                href="https://www.instagram.com/albertwan_pb/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 underline font-semibold"
+              >
+                @albertwan_pb
+              </a>!
             </p>
           </div>
         </div>
