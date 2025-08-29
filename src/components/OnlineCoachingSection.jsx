@@ -29,16 +29,6 @@ function OnlineCoachingSection() {
               Email Me
             </a>
           </div>
-          
-          <div className="mt-8 text-center">
-            <p className="text-lg md:text-xl text-black mb-4">
-              Send me a video of your gameplay and I will give you detailed analysis of:
-            </p>
-            <div className="space-y-2 text-base md:text-lg text-black">
-              <p>• What you're doing wrong</p>
-              <p>• What you can do to reach the next level</p>
-            </div>
-          </div>
         </div>
 
         {/* Call to Action */}
