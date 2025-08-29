@@ -96,10 +96,10 @@ function App() {
         />
 
         <div className="page-header">
-          <h1>{activeSection === "coaching" ? "Online Coaching" : "About Me"}</h1>
+          <h1>{activeSection === "coaching" ? "Send me a video of your gameplay!" : "About Me"}</h1>
           <p className="text-gray-900">
             {activeSection === "coaching"
-              ? "Transform your pickleball game with proven coaching methods"
+              ? "I will give you a full analysis of your gameplay and what you can do to reach the next level."
               : "Learn more about your pickleball coach and my journey"}
           </p>
         </div>
