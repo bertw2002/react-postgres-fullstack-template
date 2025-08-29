@@ -3,8 +3,8 @@ function OnlineCoachingSection() {
     <div className="online-coaching-section">
       <div className="max-w-6xl mx-auto">
         {/* Hero Section */}
-        <div className="text-center mb-8 md:mb-12 px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-black mb-6 md:mb-8">
+        <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 mx-4 md:mx-0 mb-8 md:mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-black mb-6 md:mb-8 text-center">
             Contact Me
           </h2>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
