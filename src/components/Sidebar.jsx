@@ -18,7 +18,7 @@ function Sidebar({ activeSection, onSelectSection }) {
         <div className="sidebar-section">
           <div className="sidebar-heading">Services</div>
           <Link
-            to="/coaching"
+            to="/section/coaching"
             className={
               activeSection === "coaching" ? "sidebar-link-active" : "sidebar-link"
             }
