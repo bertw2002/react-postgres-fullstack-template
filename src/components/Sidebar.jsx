@@ -31,27 +31,27 @@ function Sidebar({ activeSection, onSelectSection, isMobileMenuOpen, setIsMobile
 
       <nav className="sidebar-nav p-4">
         <Link
-          to="/"
+          to="/section/coaching"
           className={
-            activeSection === null ? "sidebar-link-active" : "sidebar-link"
+            activeSection === "coaching" ? "sidebar-link-active" : "sidebar-link"
           }
-          onClick={() => handleNavigation(null)}
+          onClick={() => handleNavigation("coaching")}
         >
-          About Me
+          Online Coaching
         </Link>
 
         <div className="sidebar-section mt-6">
           <div className="sidebar-heading text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
-            Services
+            About
           </div>
           <Link
-            to="/section/coaching"
+            to="/"
             className={
-              activeSection === "coaching" ? "sidebar-link-active" : "sidebar-link"
+              activeSection === null ? "sidebar-link-active" : "sidebar-link"
             }
-            onClick={() => handleNavigation("coaching")}
+            onClick={() => handleNavigation(null)}
           >
-            Online Coaching
+            About Me
           </Link>
         </div>
       </nav>
