@@ -25,70 +25,70 @@ function AboutMeSection() {
             <h4 className="text-lg font-semibold text-gray-900 mb-4 text-center">My Improvement Timeline</h4>
             <div className="space-y-4">
               <div className="flex items-center bg-white rounded-lg p-4 shadow-sm">
-                <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">1</div>
+                <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">DUPR 3.3</div>
                 <div>
                   <div className="font-semibold text-gray-900">September 2024: DUPR 3.3</div>
                   <div className="text-gray-600">3.5 Local Tournament (went 2-2)</div>
                 </div>
               </div>
               <div className="flex items-center bg-white rounded-lg p-4 shadow-sm">
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">2</div>
+                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">DUPR 4.0</div>
                 <div>
                   <div className="font-semibold text-gray-900">December 2024: DUPR 4.0</div>
                   <div className="text-gray-600">4.5 Local Tournament (went undefeated)</div>
                 </div>
               </div>
               <div className="flex items-center bg-white rounded-lg p-4 shadow-sm">
-                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">3</div>
+                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">DUPR 4.0</div>
                 <div>
                   <div className="font-semibold text-gray-900">December 2024: DUPR 4.0</div>
                   <div className="text-gray-600">5.0 PPA San Clemente (went 2-2) </div>
                 </div>
               </div>
               <div className="flex items-center bg-white rounded-lg p-4 shadow-sm">
-                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">3</div>
+                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">DUPR4.3</div>
                 <div>
                   <div className="font-semibold text-gray-900">January 2025: DUPR 4.3</div>
                   <div className="text-gray-600">PPA Masters Pro Qualifiers (qualified, lost to Emmrich / De la Rosa) </div>
                 </div>
               </div>
               <div className="flex items-center bg-white rounded-lg p-4 shadow-sm">
-                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">3</div>
+                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">DUPR 4.6</div>
                 <div>
                   <div className="font-semibold text-gray-900">Feburary 2025: DUPR 4.6</div>
                   <div className="text-gray-600">PPA Tucson Pro Qualifiers (qualified, lost to Trinh / Cincola) </div>
                 </div>
               </div>
               <div className="flex items-center bg-white rounded-lg p-4 shadow-sm">
-                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">3</div>
+                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">DUPR 4.8</div>
                 <div>
                   <div className="font-semibold text-gray-900">March 2025: DUPR 4.8</div>
                   <div className="text-gray-600">First open level local tournament (Silver) </div>
                 </div>
               </div>
               <div className="flex items-center bg-white rounded-lg p-4 shadow-sm">
-                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">3</div>
+                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">DUPR 5.0</div>
                 <div>
                   <div className="font-semibold text-gray-900">April 2025: DUPR 5.0</div>
                   <div className="text-gray-600">First open level mixed local tournament (Silver) </div>
                 </div>
               </div>
               <div className="flex items-center bg-white rounded-lg p-4 shadow-sm">
-                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">3</div>
+                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">DUPR 5.1</div>
                 <div>
                   <div className="font-semibold text-gray-900">May 2025: DUPR 5.1</div>
                   <div className="text-gray-600">PPA Idaho Challenger (7th place) </div>
                 </div>
               </div>
               <div className="flex items-center bg-white rounded-lg p-4 shadow-sm">
-                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">3</div>
+                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">DUPR 5.2</div>
                 <div>
                   <div className="font-semibold text-gray-900">June 2025: DUPR 5.2</div>
                   <div className="text-gray-600">PPA San Clemente Pro Qualifiers (qualified, lost to Hovenier / Koller) </div>
                 </div>
               </div>
               <div className="flex items-center bg-white rounded-lg p-4 shadow-sm">
-                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">3</div>
+                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">DUPR 5.3</div>
                 <div>
                   <div className="font-semibold text-gray-900">August 2025: DUPR 5.3</div>
                   <div className="text-gray-600">PPA Las Vegas Pro Qualifiers (qualified for men's and mixed doubles) </div>
