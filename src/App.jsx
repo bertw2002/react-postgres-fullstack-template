@@ -14,6 +14,11 @@ function App() {
   const { section } = params;
   const activeSection = section ? decodeURIComponent(section) : "coaching";
 
+  // Debug logging
+  console.log("Current section:", section);
+  console.log("Current activeSection:", activeSection);
+  console.log("Current pathname:", window.location.pathname);
+
   const handleSelectSection = (section) => {
     console.log("handleSelectSection called with:", section);
     if (section === "coaching") {
@@ -27,13 +32,14 @@ function App() {
     setIsMobileMenuOpen(false);
   };
 
-  // Set default section to coaching only on first load
+  // Remove the problematic useEffect that was redirecting users
+
+  // Set default page only on first load
   useEffect(() => {
-    // Only redirect if we're at the root path AND no section is specified
     if (window.location.pathname === "/" && !section) {
       navigate("/section/coaching", { replace: true });
     }
-  }, []); // Empty dependency array - only run once
+  }, []); // Only run once on mount
 
   return (
     <div className="layout">
@@ -99,7 +105,7 @@ function App() {
           <h1>{activeSection === "coaching" ? "Send me a video of your gameplay!" : "About Me"}</h1>
           <p className="text-gray-900">
             {activeSection === "coaching"
-              ? "I will give you a full analysis of your gameplay and what you can do to reach the next level."
+              ? "Send me a video of your gameplay and I will give you detailed analysis of: what you're doing wrong and what you can do to reach the next level."
               : "Learn more about your pickleball coach and my journey"}
           </p>
         </div>
