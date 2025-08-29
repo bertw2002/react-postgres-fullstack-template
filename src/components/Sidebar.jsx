@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 function Sidebar({ activeSection, onSelectSection, isMobileMenuOpen, setIsMobileMenuOpen }) {
   return (
-    <aside className="sidebar w-64 h-screen bg-gradient-to-b from-blue-50 to-indigo-100 border-r border-blue-200 overflow-y-auto">
+    <aside className="sidebar w-64 h-screen bg-gradient-to-b from-blue-50 to-indigo-100 border-r border-blue-200 overflow-y-auto flex flex-col">
       {/* Mobile Close Button */}
       <div className="md:hidden flex justify-between items-center p-4 border-b border-blue-200">
         <div className="sidebar-title text-lg font-bold text-blue-900">Pickleball Coach</div>
@@ -21,7 +21,8 @@ function Sidebar({ activeSection, onSelectSection, isMobileMenuOpen, setIsMobile
         Get to 5.0+
       </div>
 
-      <nav className="sidebar-nav p-4">
+      {/* Navigation - takes remaining space */}
+      <nav className="sidebar-nav p-4 flex-1">
         <Link
           to="/section/coaching"
           className={
@@ -46,6 +47,9 @@ function Sidebar({ activeSection, onSelectSection, isMobileMenuOpen, setIsMobile
           </Link>
         </div>
       </nav>
+
+      {/* Bottom spacing to ensure full height */}
+      <div className="flex-1"></div>
     </aside>
   );
 }
