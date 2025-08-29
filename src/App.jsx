@@ -8,7 +8,6 @@ import OnlineCoachingSection from "./components/OnlineCoachingSection";
 function App() {
   const navigate = useNavigate();
   const params = useParams();
-  const [activeSection, setActiveSection] = useState(null);
 
   // Get route parameters
   const { section } = params;
