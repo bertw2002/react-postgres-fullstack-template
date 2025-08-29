@@ -2,6 +2,7 @@ import { Link } from "react-router";
 
 function Sidebar({ activeSection, onSelectSection, isMobileMenuOpen, setIsMobileMenuOpen }) {
   const handleNavigation = (section) => {
+    console.log("handleNavigation called with:", section);
     onSelectSection(section);
     // Close mobile menu after navigation
     if (setIsMobileMenuOpen) {
