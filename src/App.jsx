@@ -71,7 +71,7 @@ function App() {
       )}
 
       {/* Page Background Wrapper */}
-      <div className="page-background min-h-screen">
+      <div className="page-background min-h-screen bg-white">
         <main className="main-content md:ml-64 pt-16 md:pt-0 flex justify-center">
           <div className="w-full max-w-7xl px-4 md:px-8">
             {/* Breadcrumbs for main page */}
