@@ -94,7 +94,7 @@ function OnlineCoachingSection() {
                 </div>
                 <div className="space-y-3">
                   <p className="text-gray-700">
-                    Send payment to: <span className="font-bold text-green-600">@albert-wan-2</span>
+                    Send payment to: <span className="font-bold text-green-600">@albert-wan-2</span> (cat picture)
                   </p>
                 </div>
               </div>
@@ -142,6 +142,25 @@ function OnlineCoachingSection() {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Full Drill Session Section */}
+          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 mx-4 md:mx-0 mt-8 md:mt-12 text-center border border-gray-200">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
+              🏓 FULL Drill Session Available!
+            </h3>
+            <div className="text-gray-900 text-lg md:text-xl mb-6 md:mb-8">
+              <p className="mb-3">
+                Want to take your game to the next level? Book a <span className="text-blue-600 font-bold">FULL drill session</span> with me!
+              </p>
+              <div className="bg-blue-50 rounded-lg p-4 inline-block border border-blue-200">
+                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">$100</div>
+                <div className="text-sm md:text-base text-blue-800">Minimum DUPR: 4.0+</div>
+              </div>
+            </div>
+            <p className="text-gray-700 text-base md:text-lg">
+              Perfect for players who want personalized coaching and skill development beyond video analysis.
+            </p>
           </div>
         </div>
       </div>
