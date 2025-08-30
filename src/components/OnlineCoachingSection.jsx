@@ -5,13 +5,12 @@ function OnlineCoachingSection() {
       <div className="pb-32">
         <div className="text-center px-4 pt-16">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Get to 5.0+ in one year! 
+            I offer two services:
           </h1>
           <div className="text-lg md:text-xl max-w-2xl mx-auto">
-            <p className="mb-3">I offer <span className="text-yellow-400 font-bold">TWO</span> services:</p>
             <ul className="list-none space-y-2">
-              <li>• Video Analysis</li>
-              <li>• Full Drill Sessions (up to 2 hours)</li>
+              <li>1. Video Analysis</li>
+              <li>2. Full Drill Sessions (up to 2 hours)</li>
             </ul>
           </div>
         </div>
