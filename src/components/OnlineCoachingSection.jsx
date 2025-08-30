@@ -1,6 +1,6 @@
 function OnlineCoachingSection() {
   return (
-    <div className="online-coaching-section min-h-screen bg-black">
+    <div className="online-coaching-section min-h-screen">
       {/* Top Section - Black Background with Header */}
       <div className="pb-32">
         <div className="text-center px-4 pt-16">
