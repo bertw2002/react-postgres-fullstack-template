@@ -9,7 +9,7 @@ function OnlineCoachingSection() {
           </h1>
           <div className="text-lg md:text-xl max-w-2xl mx-auto">
             <p className="mb-3 text-white">I will send you a <span className="text-yellow-400 font-bold">FULL</span> analysis of your gameplay, including:</p>
-            <ul className="list-none space-y-2 text-white">
+            <ul className="list-none space-y-2 text-black">
               <li>• What you're doing wrong</li>
               <li>• What you can do to reach the next level</li>
             </ul>
