@@ -5,13 +5,13 @@ function OnlineCoachingSection() {
       <div className="pb-32">
         <div className="text-center px-4 pt-16">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Send me a video of your gameplay!
+            Get to 5.0+ in one year! 
           </h1>
           <div className="text-lg md:text-xl max-w-2xl mx-auto">
-            <p className="mb-3">I will send you a <span className="text-yellow-400 font-bold">FULL</span> analysis of your gameplay, including:</p>
+            <p className="mb-3">I offer <span className="text-yellow-400 font-bold">TWO</span> services:</p>
             <ul className="list-none space-y-2">
-              <li>• What you're doing wrong</li>
-              <li>• What you can do to reach the next level</li>
+              <li>• Video Analysis</li>
+              <li>• Full Drill Sessions (up to 2 hours)</li>
             </ul>
           </div>
         </div>
