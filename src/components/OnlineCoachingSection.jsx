@@ -81,7 +81,7 @@ function OnlineCoachingSection() {
                 Want to take your game to the next level? Book a <span className="text-blue-600 font-bold">FULL drill session</span> with me! (Bay Area only)
               </p>
               <div className="bg-blue-50 rounded-lg p-6 inline-block border border-blue-200">
-                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">$100</div>
+                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">$200</div>
                 <div className="text-sm md:text-base text-blue-800">Minimum DUPR skill: 3.75+</div>
                 <p className="text-sm text-blue-700 mt-2">Personalized coaching beyond video analysis</p>
               </div>
