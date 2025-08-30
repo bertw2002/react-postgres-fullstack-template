@@ -1,15 +1,15 @@
 function OnlineCoachingSection() {
   return (
-    <div className="online-coaching-section">
+    <div className="online-coaching-section min-h-screen bg-white">
       {/* Top Section - Black Background with Header */}
       <div className="pb-32">
         <div className="text-center px-4 pt-16">
-          <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             Send me a video of your gameplay!
           </h1>
           <div className="text-lg md:text-xl max-w-2xl mx-auto">
-            <p className="mb-3 text-white">I will send you a <span className="text-yellow-400 font-bold">FULL</span> analysis of your gameplay, including:</p>
-            <ul className="list-none space-y-2 text-black">
+            <p className="mb-3">I will send you a <span className="text-yellow-400 font-bold">FULL</span> analysis of your gameplay, including:</p>
+            <ul className="list-none space-y-2">
               <li>• What you're doing wrong</li>
               <li>• What you can do to reach the next level</li>
             </ul>
@@ -20,35 +20,86 @@ function OnlineCoachingSection() {
       {/* Bottom Section - White Background with Content */}
       <div className="bg-white -mt-32 pt-32">
         <div className="max-w-6xl mx-auto">
-          {/* Contact Me and Rates Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mx-4 md:mx-0 mb-8 md:mb-12">
-            {/* My Rates Section */}
-            <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 border border-gray-200">
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6 text-center">
-                My Rates
-              </h3>
-              <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
-                <div className="flex items-center justify-center space-x-3">
-                  <span className="bg-gray-100 px-3 py-1 rounded-full text-sm md:text-base font-medium text-gray-800">1 Minute</span>
-                  <span className="text-2xl md:text-3xl font-bold text-gray-900">$20</span>
+          
+          {/* Section 1: Video Analysis */}
+          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 mx-4 md:mx-0 mb-8 md:mb-12 border border-gray-200">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-center">
+              📹 Video Analysis Service
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+              {/* My Rates Section */}
+              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6 text-center">
+                  My Rates
+                </h3>
+                <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
+                  <div className="flex items-center justify-center space-x-3">
+                    <span className="bg-white px-3 py-1 rounded-full text-sm md:text-base font-medium text-gray-800">1 Minute</span>
+                    <span className="text-2xl md:text-3xl font-bold text-gray-900">$20</span>
+                  </div>
+                  <div className="flex items-center justify-center space-x-3">
+                    <span className="bg-white px-3 py-1 rounded-full text-sm md:text-base font-medium text-gray-800">5 Minutes</span>
+                    <span className="text-2xl md:text-3xl font-bold text-gray-900">$40</span>
+                  </div>
+                  <div className="flex items-center justify-center space-x-3">
+                    <span className="bg-white px-3 py-1 rounded-full text-sm md:text-base font-medium text-gray-800">Full Game</span>
+                    <span className="text-2xl md:text-3xl font-bold text-gray-900">$100</span>
+                  </div>
                 </div>
-                <div className="flex items-center justify-center space-x-3">
-                  <span className="bg-gray-100 px-3 py-1 rounded-full text-sm md:text-base font-medium text-gray-800">5 Minutes</span>
-                  <span className="text-2xl md:text-3xl font-bold text-gray-900">$40</span>
-                </div>
-                <div className="flex items-center justify-center space-x-3">
-                  <span className="bg-gray-100 px-3 py-1 rounded-full text-sm md:text-base font-medium text-gray-800">Full Game</span>
-                  <span className="text-2xl md:text-3xl font-bold text-gray-900">$100</span>
+              </div>
+
+              {/* How It Works Section */}
+              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6 text-center">
+                  How It Works
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm mt-1">1</div>
+                    <p className="text-gray-700">Send me a video of your gameplay</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm mt-1">2</div>
+                    <p className="text-gray-700">I analyze your technique and strategy</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm mt-1">3</div>
+                    <p className="text-gray-700">Receive detailed feedback and improvement plan</p>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
 
+          {/* Section 2: Drill Sessions */}
+          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 mx-4 md:mx-0 mb-8 md:mb-12 border border-gray-200">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-center">
+              🏓 Personal Drill Sessions
+            </h2>
+            <div className="text-center mb-6 md:mb-8">
+              <p className="text-gray-700 text-lg md:text-xl mb-4">
+                Want to take your game to the next level? Book a <span className="text-blue-600 font-bold">FULL drill session</span> with me!
+              </p>
+              <div className="bg-blue-50 rounded-lg p-6 inline-block border border-blue-200">
+                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">$100</div>
+                <div className="text-sm md:text-base text-blue-800">Minimum DUPR skill: 3.75+</div>
+                <p className="text-sm text-blue-700 mt-2">Personalized coaching beyond video analysis</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Combined Contact & Payment Section */}
+          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 mx-4 md:mx-0 mb-8 md:mb-12 border border-gray-200">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-6 md:mb-8">
+              Get Started Today
+            </h3>
+            
             {/* Contact Me Section */}
-            <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 border border-gray-200">
-              <h2 className="text-2xl md:text-3xl font-bold text-black mb-6 md:mb-8 text-center">
+            <div className="mb-8 md:mb-10">
+              <h4 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6 text-center">
                 Contact Me
-              </h2>
-              <div className="flex flex-col items-center justify-center gap-4 md:gap-6">
+              </h4>
+              <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
                 <a 
                   href="https://www.instagram.com/albertwan_pb/" 
                   target="_blank" 
@@ -71,96 +122,77 @@ function OnlineCoachingSection() {
                 </a>
               </div>
             </div>
-          </div>
 
-          {/* Payment Instructions */}
-          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 mx-4 md:mx-0 mt-8 md:mt-12 border border-gray-200">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-6 md:mb-8">
-              How to Pay
-            </h3>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-              {/* Venmo Section */}
-              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-4">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-gray-900">Venmo</h4>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <p className="text-gray-700">
-                    Send payment to: <span className="font-bold text-green-600">@albert-wan-2</span> (cat picture)
-                  </p>
-                </div>
-              </div>
-
-              {/* Zelle Section */}
-              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-bold text-gray-900">Zelle</h4>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <p className="text-gray-700">
-                    Zelle details will be provided through DM after you contact me.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Payment Process */}
-            <div className="mt-8 md:mt-10 bg-gray-50 rounded-lg p-6 border border-gray-200">
+            {/* Payment Instructions */}
+            <div>
               <h4 className="text-lg md:text-xl font-semibold text-gray-900 mb-4 text-center">
-                Payment Process
+                Payment Methods
               </h4>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mx-auto mb-3">1</div>
-                  <h5 className="font-semibold text-gray-900 mb-2">Send Payment</h5>
-                  <p className="text-sm text-gray-600">Pay via Venmo or Zelle with your name in the note</p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-6 md:mb-8">
+                {/* Venmo Section */}
+                <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-4">
+                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h5 className="text-lg font-bold text-gray-900">Venmo</h5>
+                    </div>
+                  </div>
+                  <div className="space-y-3">
+                    <p className="text-gray-700">
+                      Send payment to: <span className="font-bold text-green-600">@albert-wan-2</span> (cat picture)
+                    </p>
+                  </div>
                 </div>
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mx-auto mb-3">2</div>
-                  <h5 className="font-semibold text-gray-900 mb-2">Send Screenshot</h5>
-                  <p className="text-sm text-gray-600">DM me a picture of your payment confirmation</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mx-auto mb-3">3</div>
-                  <h5 className="font-semibold text-gray-900 mb-2">Get Analysis</h5>
-                  <p className="text-sm text-gray-600">I'll confirm receipt and create your analysis document</p>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          {/* Full Drill Session Section */}
-          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 mx-4 md:mx-0 mt-8 md:mt-12 text-center border border-gray-200">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-6">
-              🏓 FULL Drill Session Available!
-            </h3>
-            <div className="text-gray-900 text-lg md:text-xl mb-6 md:mb-8">
-              <p className="mb-3">
-                Want to take your game to the next level? Book a <span className="text-blue-600 font-bold">FULL drill session</span> with me!
-              </p>
-              <div className="bg-blue-50 rounded-lg p-4 inline-block border border-blue-200">
-                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">$100</div>
-                <div className="text-sm md:text-base text-blue-800">Minimum DUPR: 4.0+</div>
+                {/* Zelle Section */}
+                <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h5 className="text-lg font-bold text-gray-900">Zelle</h5>
+                    </div>
+                  </div>
+                  <div className="space-y-3">
+                    <p className="text-gray-700">
+                      Zelle details will be provided through DM after you contact me.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Payment Process */}
+              <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                <h5 className="text-lg font-semibold text-gray-900 mb-4 text-center">
+                  Payment Process
+                </h5>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mx-auto mb-3">1</div>
+                    <h6 className="font-semibold text-gray-900 mb-2">Send Payment</h6>
+                    <p className="text-sm text-gray-600">Pay via Venmo or Zelle with your name in the note</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mx-auto mb-3">2</div>
+                    <h6 className="font-semibold text-gray-900 mb-2">Send Screenshot</h6>
+                    <p className="text-sm text-gray-600">DM me a picture of your payment confirmation</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mx-auto mb-3">3</div>
+                    <h6 className="font-semibold text-gray-900 mb-2">Get Service</h6>
+                    <p className="text-sm text-gray-600">I'll confirm receipt and provide your analysis or schedule your session</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <p className="text-gray-700 text-base md:text-lg">
-              Perfect for players who want personalized coaching and skill development beyond video analysis.
-            </p>
           </div>
         </div>
       </div>
