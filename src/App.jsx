@@ -72,46 +72,48 @@ function App() {
 
       {/* Page Background Wrapper */}
       <div className="page-background min-h-screen">
-        <main className="main-content md:ml-64 pt-16 md:pt-0">
-          {/* Breadcrumbs for main page */}
-          <Breadcrumbs
-            items={[
-              { label: "Online Coaching", value: "coaching" },
-              ...(activeSection !== "coaching"
-                ? [{ label: "About Me", value: "about" }]
-                : []),
-            ]}
-            onNavigate={(value) => {
-              if (value === "coaching") {
-                navigate("/section/coaching");
-              } else if (value === "about") {
-                navigate("/section/about");
+        <main className="main-content md:ml-64 pt-16 md:pt-0 flex justify-center">
+          <div className="w-full max-w-7xl px-4 md:px-8">
+            {/* Breadcrumbs for main page */}
+            <Breadcrumbs
+              items={[
+                { label: "Online Coaching", value: "coaching" },
+                ...(activeSection !== "coaching"
+                  ? [{ label: "About Me", value: "about" }]
+                  : []),
+              ]}
+              onNavigate={(value) => {
+                if (value === "coaching") {
+                  navigate("/section/coaching");
+                } else if (value === "about") {
+                  navigate("/section/about");
+                }
+              }}
+            />
+
+            <div className="page-header text-center">
+              {activeSection === "coaching" ? null : (
+                <>
+                  <h1 className="text-gray-900">About Me</h1>
+                  <p className="text-gray-900">
+                    3.3 → 5.0 in 7 months. Learn more about my journey.
+                  </p>
+                </>
+              )}
+            </div>
+
+            {/* Content based on section */}
+            {(() => {
+              console.log("Rendering content for activeSection:", activeSection);
+              if (activeSection === "coaching") {
+                console.log("Rendering OnlineCoachingSection");
+                return <OnlineCoachingSection />;
+              } else {
+                console.log("Rendering AboutMeSection");
+                return <AboutMeSection />;
               }
-            }}
-          />
-
-          <div className="page-header text-center">
-            {activeSection === "coaching" ? null : (
-              <>
-                <h1 className="text-gray-900">About Me</h1>
-                <p className="text-gray-900">
-                  3.3 → 5.0 in 7 months. Learn more about my journey.
-                </p>
-              </>
-            )}
+            })()}
           </div>
-
-          {/* Content based on section */}
-          {(() => {
-            console.log("Rendering content for activeSection:", activeSection);
-            if (activeSection === "coaching") {
-              console.log("Rendering OnlineCoachingSection");
-              return <OnlineCoachingSection />;
-            } else {
-              console.log("Rendering AboutMeSection");
-              return <AboutMeSection />;
-            }
-          })()}
         </main>
       </div>
     </div>
