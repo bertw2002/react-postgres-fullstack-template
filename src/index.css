@@ -78,7 +78,7 @@ p {
 }
 
 .sidebar {
-  @apply w-64 h-screen overflow-y-auto;
+  @apply w-64 fixed h-screen overflow-y-auto;
 }
 
 .sidebar-title {
