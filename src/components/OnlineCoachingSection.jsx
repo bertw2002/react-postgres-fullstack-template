@@ -78,7 +78,7 @@ function OnlineCoachingSection() {
             </h2>
             <div className="text-center mb-6 md:mb-8">
               <p className="text-gray-700 text-lg md:text-xl mb-4">
-                Want to take your game to the next level? Book a <span className="text-blue-600 font-bold">FULL drill session</span> with me!
+                Want to take your game to the next level? Book a <span className="text-blue-600 font-bold">FULL drill session</span> with me! (Bay Area only)
               </p>
               <div className="bg-blue-50 rounded-lg p-6 inline-block border border-blue-200">
                 <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">$100</div>
