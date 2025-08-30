@@ -40,14 +40,6 @@ function AboutMeSection() {
             
             <div className="bg-white rounded-lg p-4 shadow-sm text-center border border-gray-200">
               <div className="mb-3">
-                <div className="font-semibold text-gray-900">December 2024</div>
-                <div className="text-gray-600">5.0 PPA San Clemente (went 2-2)</div>
-              </div>
-              <div className="bg-blue-800 text-white px-4 py-2 rounded-lg inline-block font-bold text-lg">DUPR 4.0</div>
-            </div>
-            
-            <div className="bg-white rounded-lg p-4 shadow-sm text-center border border-gray-200">
-              <div className="mb-3">
                 <div className="font-semibold text-gray-900">January 2025</div>
                 <div className="text-gray-600">PPA Masters Pro Qualifiers (qualified, lost to Emmrich / De la Rosa)</div>
               </div>
